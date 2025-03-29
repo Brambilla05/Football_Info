@@ -1,0 +1,23 @@
+{
+  "name": "football_info",
+  "version": "1.0.0",
+  "description": "bot che riceve il nome di una squadra e periodicamnete da i risultati",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brambilla05/Football_Info.git"
+  },
+  "author": "Brambilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brambilla05/Football_Info/issues"
+  },
+  "homepage": "https://github.com/Brambilla05/Football_Info#readme",
+  "dependencies": {
+    "node-fetch": "^2.7.0",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
