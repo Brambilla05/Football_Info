@@ -21,7 +21,7 @@ async function fetchResults(team) {
             return 'Nessuna partita trovata.';
         }
 console.log(scores.teams);
- 
+
             const homeTeam = scores.teams[0].name; 
             const awayTeam = scores.teams[1].name; 
             const homeScore = scores.teams[0].score; 
@@ -44,7 +44,7 @@ function startSendingResults(chatId) {
             const results = await fetchResults(teamName);
             bot.sendMessage(chatId, results);
         }
-    }, 5000); 
+    }, 300000); 
 }
 
 function stopSendingResults() {
@@ -58,7 +58,7 @@ bot.on("message", (msg) => {
     const chatId = msg.chat.id;
     const text = msg.text;
     if (text === "/start") {
-        bot.sendMessage(chatId, "Benvenuto! Per favore, inviami il nome della tua squadra di calcio.");
+        bot.sendMessage(chatId, "Benvenuto! Per favore, inviami il nome della tua squadra di calcio che attualmente sta giocando.");
     } else if (text === "/stop") {
         stopSendingResults();
         teamName = null; 
