@@ -95,7 +95,7 @@ function stopSendingResults() {
             bot.sendMessage(chatId, "Hai fermato l'invio dei risultati.");
         } else {
             teamName = text; 
-            bot.sendMessage(chatId, `Hai selezionato: ${teamName}. Ora ti invierò i risultati ogni 5 minuti.`);
+            bot.sendMessage(chatId, `Hai selezionato: ${teamName}. Ora ti invierò i risultati ogni 10 minuti.`);
             startSendingResults(chatId); 
         }
     });
