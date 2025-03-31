@@ -19,6 +19,8 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "node-fetch": "^2.7.0",
-    "node-telegram-bot-api": "^0.66.0"
+    "node-telegram-bot-api": "^0.66.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
   }
 }
